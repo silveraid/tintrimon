@@ -26,7 +26,7 @@
 import sys
 import json
 import requests
-import urllib3
+# import urllib3
 
 # disable security warnings
 requests.packages.urllib3.disable_warnings()
