@@ -1,0 +1,5 @@
+# PyCharm Files
+.idea/*
+
+### Python bytecode
+*.pyc
