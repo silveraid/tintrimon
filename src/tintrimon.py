@@ -36,8 +36,8 @@ import tintri_1_1 as tintri
 
 
 # Version information
-build_ver = 'v1.00'
-build_date = '2016-07-20'
+build_ver = 'v1.01'
+build_date = '2016-07-21'
 
 
 def parse_args():
