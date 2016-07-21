@@ -425,12 +425,12 @@ def get_datastore_stats(host, session_id, space_warning, space_error):
     else:
         nagios_state = NAGIOS_OK
 
-    set_nagios_state(nagios_state, "VMS: {}, USED: {:,} GB, FREE: {:,} GB".
+    set_nagios_state(nagios_state, "VMS: {0}, USED: {1} GB, FREE: {2} GB".
                      format(vmsCount, spaceUsedPhysicalGiB, spaceRemainingPhysicalGiB))
 
 
 def tintri_logout(host, session_id):
-    print_verbose("Logout ({})".format(host))
+    print_verbose("Logout ({0})".format(host))
     tintri.api_logout(host, session_id)
 
 
@@ -514,7 +514,7 @@ def main():
     get_operational_status(args.host, session_id)
 
     # Exiting with the calculated state
-    print("{} ({})".format(NAGIOS_MESSAGE, NAGIOS_STATE))
+    print("{0} ({1})".format(NAGIOS_MESSAGE, NAGIOS_STATE))
     exit(NAGIOS_STATE)
 
 
